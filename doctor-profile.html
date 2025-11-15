@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- --------------------------------fonts---------------------------------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/doccure.dreamstechnologies.com" type="image/x-icon">
+<!-- ---------------------------css------------------------------------- -->
+
+<!-- lightbox -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css" integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Doccure</title>
+</head>
+<body id="doctor-profile">
+
+
+    
+    <nav class="navbar navbar-expand-lg  text-color py-3 d-flex align-items-center   position-sticky top-0 z-3 bg-white ">
+       <div class="container  ">
+        <div class="row w-100">
+  
+              <div class="col-12 col-lg-3">
+                <div class="logo row">
+                  <div class="menu-btn col-1 ">
+                    <button class="navbar-toggler text-color" type="button" data-bs-theme="white" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <i class="fa-solid fa-bars"></i>
+                    </button>
+                  </div>
+    
+                  <a href="index.html" class="col-11 d-flex justify-content-center">
+                    <img src="images/logo.svg" alt="">
+                  </a>
+                </div>
+              </div>
+  
+  
+            
+  
+             <div class="col-6">
+                <div class="menu w-50 pt-2 w-100">
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                     
+                  
+                    <ul class="navbar-nav  my-2 my-lg-0  justify-content-between " style="--bs-scroll-height: 100px;">
+          
+          
+                  <li class="nav-item dropdown  open ">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="">Doctor Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">Appointments</a></li>
+                      <li><a class="dropdown-item" href="#">Available Timing</a></li>
+                      <li><a class="dropdown-item" href="#">Patients List</a></li>
+                      <li><a class="dropdown-item" href="#">Patients Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Chat</a></li>
+                      <li><a class="dropdown-item" href="#">Invoices</a></li>
+                      <li><a class="dropdown-item" href="profile-setting.html">Profile Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+                      <li><a class="dropdown-item border-0" href="#">blog</a> </li>                                  
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Doctors <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item  " href="doc-dashboard.html">Doctor Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">Appointments</a></li>
+                      <li><a class="dropdown-item" href="#">Available Timing</a></li>
+                      <li><a class="dropdown-item" href="#">Patients List</a></li>
+                      <li><a class="dropdown-item" href="#">Patients Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Chat</a></li>
+                      <li><a class="dropdown-item" href="#">Invoices</a></li>
+                      <li><a class="dropdown-item" href="profile-setting.html">Profile Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Doctor Register</a></li>
+                      <li><a class="dropdown-item border-0 " href="#">blog</a> </li>
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link   text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Patients <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Patient Dashboard</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Doctors </a></li> -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Doctors</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Map grid</a></li>
+                      <li><a class="dropdown-item" href="#">Map List</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Map With Availability</a></li>
+    
+                    </ul>
+                  </li>
+                    
+                      <!-- <li><a class="dropdown-item" href="#">Search Doctor</a></li> -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Doctors</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Search Doctor</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Search Doctor</a></li>
+    
+                    </ul>
+                  </li>
+    
+                       <!-- <li><a class="dropdown-item" href="#">Doctor Profile</a></li> -->
+                        <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=" text-primary"> Doctor Profile</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      
+                      <li><a class="dropdown-item text-primary" href="doctor-profile.html">Doctor Profile 1</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Doctor Profile 02</a></li>
+    
+                    </ul>
+                  </li>
+    
+                      <!-- <li><a class="dropdown-item" href="#">Booking </a></li> -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Booking</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Booking</a></li>
+                      <li><a class="dropdown-item" href="#">Booking 1</a></li>
+                      <li><a class="dropdown-item" href="#">Booking 2</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Booking Popup</a></li>
+    
+                    </ul>
+                  </li>
+    
+                      <li><a class="dropdown-item" href="#">Checkout</a></li>
+                       <li><a class="dropdown-item" href="#">Boocking Success</a></li>
+                      <li><a class="dropdown-item" href="#">Favourites</a></li>
+                      <li><a class="dropdown-item" href="#">Chat</a></li>
+                       <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Change Password</a></li>
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pharmacy <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                      <li><a class="dropdown-item" href="#">Pharmacy Details</a></li>
+                      <li><a class="dropdown-item" href="#">Pharmacy Search</a></li>
+                       <li><a class="dropdown-item" href="#">Product</a></li>
+                      <li><a class="dropdown-item" href="#">Product Description</a></li>
+                      <li><a class="dropdown-item" href="#">Cart</a></li>
+                       <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+                      <li><a class="dropdown-item" href="#">Payment Success</a></li>
+                      <li><a class="dropdown-item border-0 href="#">Pharmacy Register</a></li>
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu pb-0">
+                      <li><a class="dropdown-item" href="#">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Other Pages</a></li>  -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Other Pages</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Starter Page</a></li>
+                      <li><a class="dropdown-item" href="#">Pricing Plan</a></li>
+                      <li><a class="dropdown-item" href="#">FAQ</a></li>
+                      <li><a class="dropdown-item" href="#">Maintenance </a></li>
+                      <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                      <li><a class="dropdown-item" href="#">Terms & Condition</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Components</a></li>
+    
+                    </ul>
+                  </li>
+                      <!-- <li><a class="dropdown-item" href="#">Authentication</a></li> -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Authentication</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Login Email</a></li>
+                      <li><a class="dropdown-item" href="#">Login Phone</a></li>
+                      <li><a class="dropdown-item" href="#">Doctor Signup</a></li>
+                      <li><a class="dropdown-item" href="#">patient Signup</a></li>
+                      <li><a class="dropdown-item" href="#">Forget Password 1</a></li>
+                      <li><a class="dropdown-item" href="#">Forget Password 1</a></li>
+                      <li><a class="dropdown-item" href="#">Email OTP</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Phone OTP</a></li>
+    
+                    </ul>
+                  </li>
+                      <!-- <li><a class="dropdown-item" href="#">Error </a></li> -->
+                      
+                   <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Error</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Error 404</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Error 500</a></li>
+    
+                    </ul>
+                  </li>
+                      <li><a class="dropdown-item" href="#">Hospitals</a></li>
+                       <li><a class="dropdown-item" href="#">Specially</a></li>
+                      <li><a class="dropdown-item" href="#">Clinic</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Call</a></li> -->
+                       <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Call</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Voice Call</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Video Call</a></li>
+    
+                    </ul>
+                  </li>
+                       
+                       <!-- <li><a class="dropdown-item" href="#">Invoices</a></li> -->
+                        <li class="nav-item dropend border-bottom py-1">
+                    <a class="nav-link d-flex align-items-center justify-content-between px-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                     <span class=""> Invoices</span> <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropend-menu">
+                      <li><a class="dropdown-item" href="#">Invoices</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Invoices View</a></li>
+    
+                    </ul>
+                  </li>
+                    
+                        
+                      
+    
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog List</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Blog details</a></li>
+                    </ul>
+                  </li>
+          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Admin <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Admin</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Pharmacy Admin</a></li>
+    
+                    </ul>
+                  </li>
+                    </ul>
+                  
+                  </div>
+                </div>
+             </div>
+           
+  
+  
+  
+  
+  
+             <div class="col-12 col-lg-3 d-flex justify-content-center ">
+                 <div class="right-btn w-100 ">
+                    <ul class="d-flex align-items-center gap-3 justify-content-lg-end justify-content-center">
+    
+                                   <li class="nav-item dropdown ">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     
+                       <div class=" icons rounded-circle d-flex align-items-center justify-content-center bg-white " style="width: 35px; height: 35px;"> <i class="fa-solid fa-magnifying-glass fa-lg "></i></div>
+                    </a>
+                    <ul class="dropdown-menu p-0 border-0" style="left: -235px;">
+                      <div>
+                        <form class="py-3 px-3 d-flex border-0">
+                          <input type="text" class="form-control rounded-end-0 border-primary">
+                          <button type="submit" class="btn btn-primary rounded-start-0 py-2">Search</button>
+                        </form>
+                      </div>
+                      
+                    </ul>
+                      </li>
+    
+                      <li><a href=""> <div class="icons rounded-circle d-flex align-items-center justify-content-center " style="width: 24px; height: 24px;"> <i class=" sun fa-regular fa-sun  "></i></div></a></li>
+    
+    
+                                 <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="icons rounded-circle d-flex align-items-center justify-content-center  position-relative " style="width: 24px; height: 24px;"><i class="fa-regular fa-bell fa-sm"></i></div>
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle " >
+                          <span class="visually-hidden"></span>
+                    </a>
+                    <ul class="dropdown-menu px-3" style="width: 420px ; left: -378px;">
+                      <li class=""><a class="dropdown-item p-0 pt-2 pb-3" href="#">
+                        <h6 class="m-0">Notifictions</h6></a></li>
+                        <div class="wrapper "style="height: 260px; overflow-y: auto;">
+                          <div class="card py-3 pb-4 border-0 border-bottom ">
+      
+                           <a href="" class="d-flex gap-2">
+                              <div class="left-img rounded-3" style="width: 50px; height: 50px; ">
+                                <img src="images/client-01.jpg" alt="" class="w-100 rounded-3">
+                              </div>
+        
+                              <div class="right-content w-100">
+                                <div class="top d-flex align-items-center justify-content-between">
+                                  <h4 class="m-0">Travis Tremble</h4>
+                                  <p class="m-0 "style="font-weight: 600; font-size:12px" >12 Min Ago</p>
+                                
+                               </div>
+                                <div class="middle">
+                                    <p class="m-0 p-theme-color">Sent a amount of $210 for his Appointment</p>
+                                  <span class="theme-color">Dr.Ruby perin </span>
+                                </div>
+                              </div>
+                           </a>
+      
+                          </div>
+      
+                           <div class="card py-3 pb-4 border-0 border-bottom ">
+      
+                           <a href="" class="d-flex gap-2">
+                              <div class="left-img rounded-3" style="width: 50px; height: 50px; ">
+                                <img src="images/client-03.jpg" alt="" class="w-100 rounded-3">
+                              </div>
+        
+                              <div class="right-content w-100">
+                                <div class="top d-flex align-items-center justify-content-between">
+                                  <h4 class="m-0">Travis Tremble</h4>
+                                  <p class="m-0 "style="font-weight: 600; font-size:12px" >18.30 PM</p>
+                                
+                               </div>
+                                <div class="middle">
+                                    <p class="m-0 p-theme-color">Sent a amount of $210 for his Appointment</p>
+                                  <span class="theme-color">Dr.Ruby perin </span>
+                                </div>
+                              </div>
+                           </a>
+      
+                          </div>
+      
+                           <div class="card py-3 pb-4 border-0 border-bottom ">
+      
+                           <a href="" class="d-flex gap-2">
+                              <div class="left-img rounded-3" style="width: 50px; height: 50px; ">
+                                <img src="images/client-02.jpg" alt="" class="w-100 rounded-3">
+                              </div>
+        
+                              <div class="right-content w-100">
+                                <div class="top d-flex align-items-center justify-content-between">
+                                  <h4 class="m-0">Travis Tremble</h4>
+                                  <p class="m-0 "style="font-weight: 600; font-size:12px" >6 Min Ago</p>
+                                
+                               </div>
+                                <div class="middle">
+                                    <p class="m-0 p-theme-color">has booked her appointment to</p>
+                                  <span class="theme-color">Dr. Hendry Watt </span>
+                                </div>
+                              </div>
+                           </a>
+      
+                          </div>
+      
+                           <div class="card py-3  border-0">
+      
+                           <a href="" class="d-flex gap-2">
+                              <div class="left-img rounded-3" style="width: 50px; height: 50px; ">
+                                <img src="images/client-04.jpg" alt="" class="w-100 rounded-3">
+                              </div>
+        
+                              <div class="right-content w-100">
+                                <div class="top d-flex align-items-center justify-content-between">
+                                  <h4 class="m-0">Travis Tremble</h4>
+                                  <p class="m-0 "style="font-weight: 600; font-size:12px" >18.30 PM</p>
+                                
+                               </div>
+                                <div class="middle">
+                                    <p class="m-0 p-theme-color"> Send a message to his doctor</p>
+                                  <span class="theme-color">Dr.Ruby perin </span>
+                                </div>
+                              </div>
+                           </a>
+      
+                          </div>
+                        </div>
+    
+                        
+                    </ul>
+                      </li>
+    
+                      <li><a href=""> <div class="icons rounded-circle d-flex align-items-center justify-content-center position-relative " style="width: 24px; height: 24px;"> <i class="fa-regular fa-comment-dots fa-sm"></i>
+                         <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success-1 border border-light rounded-circle">
+                          <span class="visually-hidden">New alerts</span>
+    </div></a>
+                      </li>
+                      
+    
+                      <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                     <div class="icons rounded-circle d-flex align-items-center justify-content-center " style="width: 24px; height: 24px;"> <i class="fa-solid fa-cart-shopping position-relative fa-sm"></i>
+                    
+                    </div>
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-purble border border-light rounded-circle">
+                          <span class="visually-hidden"></span>
+                     
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow rounded-3" style="width: 320px; left: -280px;">
+                    
+                      <li class="px-3">
+                      <div class="div-cart bg-white">
+    
+    
+                        <div class="line d-flex px-3 py-2 gap-3 align-items-start py-3 border-bottom">
+                          <div class="img rounded-3" style="width: 70px;">
+                            <img src="images/product-lO-fWyPe.jpg" alt="" class="w-100 rounded-3">
+                          </div>
+                          <div class="details me-auto">
+                            <h6>Benzaxapine Croplex</h6>
+                            <div>
+                              <span class="theme-color">$849.99</span>
+                              <span class="text-black-50">Quantity: 01</span> 
+                            </div>
+                          </div>
+                          <div class="remove-btn">
+                            <button><i class="fa-solid fa-xmark fa-2xs text-white  "></i></button>
+                          </div>
+                        </div>
+    
+                           <div class="line d-flex px-3 py-2 gap-3 align-items-start py-3 border-bottom">
+                          <div class="img rounded-3" style="width: 70px;">
+                            <img src="images/product-lO-fWyPe.jpg" alt="" class="w-100 rounded-3">
+                          </div>
+                          <div class="details me-auto">
+                            <h6>Benzaxapine Croplex</h6>
+                            <div>
+                              <span class="theme-color">$849.99</span>
+                              <span class="text-black-50">Quantity: 01</span> 
+                            </div>
+                          </div>
+                          <div class="remove-btn">
+                            <button><i class="fa-solid fa-xmark fa-2xs text-white  "></i></button>
+                          </div>
+                        </div>
+    
+                           <div class="line d-flex px-3 py-2 gap-3 align-items-start py-3 border-bottom">
+                          <div class="img rounded-3" style="width: 70px;">
+                            <img src="images/product-lO-fWyPe.jpg" alt="" class="w-100 rounded-3">
+                          </div>
+                          <div class="details me-auto">
+                            <h6>Benzaxapine Croplex</h6>
+                            <div>
+                              <span class="theme-color">$849.99</span>
+                              <span class="text-black-50">Quantity: 01</span> 
+                            </div>
+                          </div>
+                          <div class="remove-btn">
+                            <button><i class="fa-solid fa-xmark fa-2xs text-white  "></i></button>
+                          </div>
+                        </div>
+    
+                        <div class="holder mt-3">
+                          <div class="line d-flex align-items-center justify-content-between pb-2 ">
+                            <h6 class="m-0 fw-bold p-theme-color">Subtotal</h6>
+                            <p class="m-0 text-black-50">$5,877.00</p>
+                          </div>
+    
+                           <div class="line d-flex align-items-center justify-content-between pb-2 ">
+                            <h6 class="m-0 fw-bold p-theme-color">Shipping</h6>
+                            <p class=" m-0 text-black-50">$25.00</p>
+                          </div>
+    
+                           <div class="line d-flex align-items-center justify-content-between pb-2 ">
+                            <h6 class="m-0 fw-bold p-theme-color">Tax</h6>
+                            <p class="m-0 text-black-50">$0.00</p>
+                          </div>
+    
+                           <div class="line d-flex align-items-center justify-content-between pb-5 border-bottom">
+                            <h6 class="m-0 fw-bold p-theme-color">Total</h6>
+                            <p class="m-0 text-black-50">$5.2555</p>
+                          </div>
+                        </div>
+                        
+                        <div class="checkout-btn pt-3 pb-2 d-flex gap-4 justify-content-center">
+                          <a href="" class="btn btn-primary rounded-pill py-2 px-4 ">View Cart</a>
+                          <a href="" class="btn btn-primary rounded-pill  py-2 px-4">Checkout</a>
+                        </div>
+                        
+    
+                        
+    
+                      </div>
+                    </li>
+    
+                    </ul>
+                      </li>
+    
+    
+                    <li class="nav-item dropdown">
+                    <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="img-holder rounded-circle overflow-hidden" style="width: 30px; height: 30px; " >
+                        <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" class="w-100">
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu px-1 profile-sec" style="width: 240px;left: -197px;">
+                      <li class="mx-auto px-1 style="width: 90%;">
+                      
+                        <div class="dr-sec d-flex py-1 px-3 main-bg-color" >
+                          <div class="img overflow-hidden me-3  rounded-circle border border-success"   style="width: 26px ; height: 26px; ">
+                            <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="" class="w-100">
+                          </div>
+    
+                          <div class="details ">
+                            <h5 class="m-0 fw-bold " style="white-space: nowrap;">Dr Edalin Hendry</h5>
+                            <P class="fa-sun m-0" >Doctor</P>
+                          </div>
+                        </div>
+                        
+                      </li>
+                      <li><a class="dropdown-item border-0" href="#">Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                      <li><a class="dropdown-item border-0" href="#">Logout</a></li>
+                    </ul>
+                    </li>
+                </ul>
+    
+                </div>
+             </div>
+ 
+        </div>
+        </div>
+        
+    </nav>
+
+    <div class="breadcrumbs main-bg-color overflow-hidden mb-5">
+        <div class="container position-relative ">
+            <div class="row py-2">
+                <div class="col-12 text-center">
+                    <div class="content py-4 position-relative ">
+                        <div class="breadcrumbs-icon position-absolute ">
+                            <img src="images/breadcrumb-icon.png" alt="">
+                        </div>
+                        <div class="breadcrumbs-icon-2 position-absolute ">
+                            <img src="images/breadcrumb-icon.png" alt="">
+                        </div>
+                        <div class="path"> 
+                            <ul class="d-flex align-items-center gap-2 justify-content-center">
+                                <li class="theme-color "><a href="" class="fs-6"><i class="fa-solid fa-house "></i></a></li>
+                                <li class="p-theme-color"><a href="" class=""><h5 class="m-0"><span class="fa-solid fa-chevron-right"></span> Doctor </h5></a></li>
+                                <li class="p-theme-color"><a href=""><h5 class="m-0"><span class="fa-solid fa-chevron-right"></span> Doctor Profile</h5></a></li>
+                            </ul>
+                        </div>
+                        <div class="header">
+                            <h2 class="display-6 fw-bold text-color">Doctor Profile</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <header class=" ">
+    
+    <div class="container doctor-profile mb-5 border shadow px-0">
+      <div class="card-holder  p-4 d-flex justify-content-lg-between flex-column flex-lg-row justify-content-center align-items-center gap-lg-5rr">
+        <div class="card-content-left d-flex "> 
+            <div class="img-holder ">
+                <img src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="" class="">
+            </div>
+            <div class="details">
+    
+                <div class="top">
+                    <h4>Dr. Darren Elder</h4>
+                    <p>BDS, MDS - Oral & Maxillofacial Surgery</p>
+    
+                </div>
+    
+                <div class="middle ">
+                    <p class="logo mb-2"> <img src="images/teeth.png" alt="" class="">Dentist</p>
+    
+                    <div class="ratings mb-2 ">
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star text-black-50"></i>
+                        <span class="d-inline-block average-rating ms-1">(35)</span>
+                    </div>
+    
+                    <p class="doc-location p-theme-color">
+                        <i class="fas fa-map-marker-alt"></i>
+                         Newyork, USA
+                        </p>
+                </div>
+    
+                <div class="bottom ">
+                    <div class="gallary mb-3">
+                        <ul class="d-flex align-items-center gap-2">
+                            <li>
+                               
+                                <a href="images/intensive care.jpg" data-lightbox="image-1" data-title="My caption">
+                                   <img src="images/intensive care.jpg" alt="">
+                                </a>
+                             
+                              </li>
+                              <li>
+                               
+                                <a href="images/intensive care.jpg" data-lightbox="image-1" data-title="My caption">
+                                   <img src="images/feature-04-BgySQc8e.jpg" alt="">
+                                </a>
+                             
+                              </li>
+    
+                                <li>
+                               
+                                <a href="images/intensive care.jpg" data-lightbox="image-1" data-title="My caption">
+                                   <img src="images/feature-03-CsVmaQqg.jpg" alt="">
+                                </a>
+                             
+                              </li>
+                                <li>
+                               
+                                <a href="images/intensive care.jpg" data-lightbox="image-1" data-title="My caption">
+                                   <img src="images/feature-02-CidU_YCh.jpg" alt="">
+                                </a>
+                             
+                              </li>
+                          
+                        </ul>
+                    </div>
+    
+                    <div class="clinic-services d-flex gap-2">
+                        <span class="border py-1 px-2 rounded-3" style="font-size: 12px;">Dental Fillings</span>
+                        <span class="border py-1 px-2 rounded-3" style="font-size: 12px;">Teeth Whitneing</span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>    
+    
+        <div class="card-content-right ">
+              <p class="doc-location ">
+                       <i class="far fa-thumbs-up"></i>
+                        99%
+                        </p>
+                        
+                          <p class="doc-location ">
+                       <i class="far fa-comment"></i>
+                          35 Feedback
+                        </p>
+    
+                          <p class="doc-location ">
+                        <i class="fas fa-map-marker-alt"></i>
+                         Newyork, USA
+                        </p>
+    
+                          <p class="doc-location ">
+                        <i class="far fa-money-bill-alt"></i>
+                          $100 per hour
+                        </p>
+
+                        <div class="action-btn mb-4 ">
+                            <ul class="d-flex align-items-center gap-1">
+                                <li class="red  rounded-circle">
+                                    <a class="btn btn-white " href="" >
+                                        <i class="far fa-bookmark"></i>
+                                    </a>
+                                </li>
+
+                                 <li class="green rounded-circle">
+                                    <a class="btn btn-white " href="" >
+                                        <i class="far fa-comment-alt"></i>
+                                    </a>
+                                </li>
+
+                                 <li class="green rounded-circle">
+                                    <a class="btn btn-white " href="" >
+                                        <i class="fas fa-phone"></i>
+                                    </a>
+                                </li>
+
+                                 <li class="green rounded-circle">
+                                    <a class="btn btn-white " href="" >
+                                        <i class="fas fa-video"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="booking-btn  p-0">
+                            <a href="" class="btn btn-primary  gradient rounded-pill py-2 px-4">Book Appointment</a>
+                        </div>
+        </div>    
+      </div>
+    </div>
+ </header>
+    <div class="tap-holder mb-2">
+        <div class="container px-0 ">
+
+            <!-- <nav> -->
+              
+  <div class="card border rounded-4  px-4 ">
+    <div class="card-body py-0">
+      <div class="nav nav-tabs nav-tabs-bottom nav-justified" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Overview</button>
+    
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Locations</button>
+    
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</button>
+    
+        
+        <button class="nav-link" id="nav-hours-tab" data-bs-toggle="tab" data-bs-target="#nav-hours" type="button" role="tab" aria-controls="nav-hours" aria-selected="false">Business Hours</button>
+    
+        
+    
+      </div>
+    <!-- </nav> -->
+        <div class="tab-content " id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+     
+        <div class="wrapper w-75 py-3 ">
+            <h5 class="fw-bold mb-3">About Me</h5>
+            <p class="p-theme-color ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            
+            <div class="timeline-sec mb-5">
+                <h5 class="fw-bold  ">Education</h5>
+        
+                <ul class="timeline-line ms-2">
+                    <div class="timeline">
+                        <li class="timeline-item to-blue"><a href="">American Dental Medical University</a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50">BDS</p>
+                        <p class="m-0 text-black-50">1998 - 2003</p>
+                    </div >
+                    <div class="timeline">
+                    
+                         <li class="timeline-item mt-4 to-blue"><a href="" >American Dental Medical University</a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50">MDS</p>
+                        <p class="m-0 text-black-50">2003 - 2005</p>
+                    </div>    
+                </ul>
+            </div>
+        
+        
+             <div class="timeline-sec mb-5">
+                <h5 class="fw-bold ">Work & Experience</h5>
+        
+                <ul class="timeline-line ms-2">
+                    <div class="timeline">
+                        <li class="timeline-item to-blue"><a href="">Glowing Smiles Family Dental Clinic</a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50">2010 - Present (5 years)</p>
+                        <!-- <p class="m-0 text-black-50">1998 - 2003</p> -->
+                    </div >
+                    <div class="timeline">
+                    
+                         <li class="timeline-item mt-4 to-blue"><a href="" >Comfort Care Dental Clinic</a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50">2007 - 2010 (3 years)</p>
+                        <!-- <p class="m-0 text-black-50">2003 - 2005</p> -->
+                    </div>    
+                      <div class="timeline">
+                    
+                         <li class="timeline-item mt-4 to-blue"><a href="" >Dream Smile Dental Practice</a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50">2005 - 2007 (2 years)</p>
+                        <!-- <p class="m-0 text-black-50">2003 - 2005</p> -->
+                    </div>    
+                </ul>
+            </div>
+        
+        
+             <div class="timeline-sec mb-5">
+                <h5 class="fw-bold ">Awards</h5>
+        
+                <ul class="timeline-line ms-2">
+                    <div class="timeline">
+                        <p class="m-0 text-primary">July 2019</p>
+                        <li class="timeline-item"><a href=""><h5>Humanitarian Award</h5></a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50 fs-5 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div >
+                    <div class="timeline">
+                        
+                        <p class="m-0 text-primary mt-4">March 2011</p>
+                         <li class="timeline-item "><a href="" ><h5>Certificate for International Volunteer Service</h5></a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50 fs-5 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>    
+                       <div class="timeline">
+                        
+                        <p class="m-0 text-primary mt-4">May 2008</p>
+                         <li class="timeline-item "><a href="" ><h5>The Dental Professional of The Year Award</h5></a></li>
+                        <li class="timeline-dot"></li>
+                        <p class="m-0 text-black-50 fs-5 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>    
+                </ul>
+            </div>
+        
+            <div class="service-list mb-4">
+                <h5>Services</h5>
+                <ul class="ms-4 row">
+                    <li class="col-12 col-xl-4 col-lg-6">Tooth cleaning</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Root Canal Therapy</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Implants</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Composite Bonding</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Fissure Sealants</li>
+                    <li class="col-12 col-xl-4 col-lg-6"  >Surgical Extractions</li>
+                </ul>
+            </div>
+    
+            
+            <div class="service-list ">
+                <h5>Specializations</h5>
+                <ul class="ms-4 row">
+                    <li class="col-12 col-xl-4 col-lg-6">Children Care</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Dental Care</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Oral and Maxillofacial Surgery</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Orthodontist</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Periodontist</li>
+                    <li class="col-12 col-xl-4 col-lg-6">Prosthodontics</li>
+                </ul>
+            </div>
+        
+    </div>
+        
+        
+          </div>
+    
+    
+    
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        
+        <div class="wrapper">
+          <div class="line border rounded-3 py-4 px-4 mb-4">
+            <div class="row ">
+              <div class="col-6 ">
+    
+                 <div class="details">
+        
+                    <div class="top">
+                        <h5 class="to-blue">Smile Cute Dental Care Center</h5>
+                        <p class="text-black-50">MDS - Periodontology and Oral Implantology, BDS</p>
+        
+                    </div>
+        
+                    <div class="middle mb-3">
+                     
+        
+                        <div class="ratings  ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>
+                            <span class="d-inline-block average-rating ms-1">(13)</span>
+                        </div>
+        
+                        <p class="doc-location p-theme-color my-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                             Newyork, USA
+                            </p>
+    
+                            <a href="" class="text-primary fw-bold">Get Directions</a>
+                    </div>
+        
+                    <div class="bottom ">
+                        <div class="gallary mb-3">
+                            <ul class="d-flex align-items-center gap-2">
+                                <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+        
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+        
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+                              
+                            </ul>
+                        </div>
+        
+                       
+                    </div>
+        
+                </div>
+              </div>
+    
+    
+              <div class="col-4">
+    
+                <div class="clinic-timing">
+                  <div>
+                    <p class="mb-1 fw-bold"><span> Mon - Sat </span> </p>
+                    <p class="d-flex flex-column p-theme-color"><span>10:00 AM - 2:00 PM</span><span>4:00 PM - 9:00 PM</span></p>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-bold"><span>Sun</span></p>
+                    <p class="p-theme-color"><span>10:00 AM - 2:00 PM</span></p>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="col-2">
+    
+                <div class=""><h4 >$250</h4></div>
+              </div>
+            </div>
+          </div>
+    
+           <div class="line border rounded-3 py-4 px-4">
+            <div class="row ">
+              <div class="col-6 ">
+    
+                 <div class="details">
+        
+                    <div class="top">
+                        <h5 class="to-blue">Smile Cute Dental Care Center</h5>
+                        <p class="text-black-50">MDS - Periodontology and Oral Implantology, BDS</p>
+        
+                    </div>
+        
+                    <div class="middle mb-3">
+                     
+        
+                        <div class="ratings  ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>
+                            <span class="d-inline-block average-rating ms-1">(13)</span>
+                        </div>
+        
+                        <p class="doc-location p-theme-color my-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                             Newyork, USA
+                            </p>
+    
+                            <a href="" class="text-primary fw-bold">Get Directions</a>
+                    </div>
+        
+                    <div class="bottom ">
+                        <div class="gallary mb-3">
+                            <ul class="d-flex align-items-center gap-2">
+                                <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+        
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+        
+                                   <li><a href="">
+                                    <img src="images/intensive care.jpg" alt="">
+                                </a></li>
+                              
+                            </ul>
+                        </div>
+        
+                       
+                    </div>
+        
+                </div>
+              </div>
+    
+    
+              <div class="col-4">
+    
+                <div class="clinic-timing">
+                  <div>
+                    <p class="mb-1 fw-bold"><span> Mon - Sat </span> </p>
+                    <p class="d-flex flex-column p-theme-color"><span>10:00 AM - 2:00 PM</span><span>4:00 PM - 9:00 PM</span></p>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-bold"><span>Sun</span></p>
+                    <p class="p-theme-color"><span>10:00 AM - 2:00 PM</span></p>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="col-2">
+    
+                <div class=""><h4 >$250</h4></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+          </div>
+    
+    
+      
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+        <div class="wrapper comments ">
+          <ul class="comments-tree">
+            <li class="main mb-4">
+              <div class="comment d-flex">
+                <div class="img-holder  overflow-hidden rounded-circle d-flex align-items-start me-3" style="width: 24px;height: 24px;">
+                  <img src="images/patient-comment.jpg " alt="" class="w-100">
+                </div>
+    
+                <div class="comment-content w-100">
+    
+                  <div class="name-rating d-flex justify-content-between ">
+                    <div class="name"><h4>Richard Wilson</h4></div>
+    
+                      <div class="ratings  ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>    
+                      </div>
+                  </div>
+                  <div class="commet-timing">
+                    <p class="p-theme-color">Reviewed 2 Days ago</p>
+                  </div>
+                  <p class="recommend text-primary fw-bold">
+                    <i class="far fa-thumbs-up"></i>
+                     I recommend the doctor</p>
+    
+                       <p class="p-theme-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus</p>
+    
+                       <div class="reply d-flex justify-content-between align-items-center">
+                        <a class="comment-btn text-primary" href="">
+                          <i class="fas fa-reply"></i>
+                           Reply
+                          </a>
+    
+                            <div class="recommend-btn ">
+                              <p class="d-flex gap-2 align-items-center">
+                              <span class="p-theme-color">Recommend?</span>
+                              <a class="btn btn-outline-secondary" href="" >
+                                <i class="far fa-thumbs-up "></i> Yes
+                              </a>
+      
+                                <a class="btn btn-outline-secondary" href="" >
+                                  <i class="far fa-thumbs-down"></i> No
+                                </a>
+                                </p>
+                              </div>
+                            </div>
+                </div>
+              </div>
+            </li>
+            <ul  class="comment-reply ms-5 ">
+              
+                <li class="branche ms-5 mb-5 ">
+              <div class="comment d-flex">
+                <div class="img-holder  overflow-hidden rounded-circle d-flex align-items-start me-3" style="width: 24px;height: 24px;">
+                  <img src="images/patient-comment.jpg " alt="" class="w-100">
+                </div>
+    
+                <div class="comment-content w-100">
+    
+                  <div class="name-rating d-flex justify-content-between ">
+                    <div class="name"><h4>Richard Wilson</h4></div>
+    
+                      <div class="ratings  ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>    
+                      </div>
+                  </div>
+                  <div class="commet-timing">
+                    <p class="p-theme-color">Reviewed 2 Days ago</p>
+                  </div>
+                  <p class="recommend text-primary fw-bold">
+                    <i class="far fa-thumbs-up"></i>
+                     I recommend the doctor</p>
+    
+                       <p class="p-theme-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus</p>
+    
+                       <div class="reply d-flex justify-content-between align-items-center">
+                        <a class="comment-btn text-primary" href="">
+                          <i class="fas fa-reply"></i>
+                           Reply
+                          </a>
+    
+                            <div class="recommend-btn ">
+                              <p class="d-flex gap-2 align-items-center">
+                              <span class="p-theme-color">Recommend?</span>
+                              <a class="btn btn-outline-secondary" href="" >
+                                <i class="far fa-thumbs-up "></i> Yes
+                              </a>
+      
+                                <a class="btn btn-outline-secondary" href="" >
+                                  <i class="far fa-thumbs-down"></i> No
+                                </a>
+                                </p>
+                              </div>
+                            </div>
+                </div>
+              </div>
+            </li>
+    
+    
+            </ul>
+    
+    <li class="main mb-4">
+              <div class="comment d-flex">
+                <div class="img-holder  overflow-hidden rounded-circle d-flex align-items-start me-3" style="width: 24px;height: 24px;">
+                  <img src="images/patient-comment.jpg " alt="" class="w-100">
+                </div>
+    
+                <div class="comment-content w-100">
+    
+                  <div class="name-rating d-flex justify-content-between ">
+                    <div class="name"><h4>Richard Wilson</h4></div>
+    
+                      <div class="ratings  ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>    
+                      </div>
+                  </div>
+                  <div class="commet-timing">
+                    <p class="p-theme-color">Reviewed 2 Days ago</p>
+                  </div>
+                  <p class="recommend text-primary fw-bold">
+                    <i class="far fa-thumbs-up"></i>
+                     I recommend the doctor</p>
+    
+                       <p class="p-theme-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Curabitur non nulla sit amet nisl tempus</p>
+    
+                       <div class="reply d-flex justify-content-between align-items-center">
+                        <a class="comment-btn text-primary" href="">
+                          <i class="fas fa-reply"></i>
+                           Reply
+                          </a>
+    
+                            <div class="recommend-btn ">
+                              <p class="d-flex gap-2 align-items-center">
+                              <span class="p-theme-color">Recommend?</span>
+                              <a class="btn btn-outline-secondary" href="" >
+                                <i class="far fa-thumbs-up "></i> Yes
+                              </a>
+      
+                                <a class="btn btn-outline-secondary" href="" >
+                                  <i class="far fa-thumbs-down"></i> No
+                                </a>
+                                </p>
+                              </div>
+                            </div>
+                            
+                </div>
+              </div>
+            </li>
+            <div class="d-flex justify-content-center border-bottom pb-5">
+              <a href="" class="btn btn-primary btn-lg gradient rounded-pill">Show all feedback<span class="fw-bold">(167)</span> </a>
+            </div>
+          </ul>
+          
+    <!-- ////////////////////////////////////////////////////////////// -->
+    
+    
+          <div class="add-comment mt-4">
+            <h4>Write a review for 
+              <span class="fw-bold">Dr. Darren Elder</span></h4>
+    
+              <form>
+                <p class="fs-5 text-black-50">Review</p>
+    
+                
+                      <div class="ratings d-flex justify-content-end ">
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star filled text-warning"></i>
+                            <i class="fas fa-star text-black-50"></i>    
+                      </div>
+    
+                <!-- <div class="star-rating">
+                  <input id="star-5" type="radio" value="star-5" name="rating">
+                  <label for="star-5" title="5 stars">
+                    <i class="active fa fa-star"></i>
+                  </label>
+                  <input id="star-4" type="radio" value="star-4" name="rating">
+                  <label for="star-4" title="4 stars">
+                    <i class="active fa fa-star"></i>
+                  </label>
+                  <input id="star-3" type="radio" value="star-3" name="rating">
+                  <label for="star-3" title="3 stars">
+                    <i class="active fa fa-star"></i>
+                  </label>
+                  <input id="star-2" type="radio" value="star-2" name="rating">
+                  <label for="star-2" title="2 stars">
+                    <i class="active fa fa-star"></i>
+                  </label>
+                  <input id="star-1" type="radio" value="star-1" name="rating">
+                  <label for="star-1" title="1 star">
+                    <i class="active fa fa-star"></i>
+                  </label>
+                </div> -->
+    
+                <div class="form-group mb-3">
+                  <label>Title of your review</label>
+                  <input class="form-control" placeholder="If you could say it in one sentence, what would you say?" type="text">
+                </div>
+    
+                <div class="form-group">
+                  <label>Your review</label>
+                  <textarea id="review_desc" maxlength="100" class="form-control"></textarea>
+                  <div class="d-flex justify-content-between mt-3">
+                    <p class="p-theme-color"><span id="chars">100</span> characters remaining</p>
+                  </div>
+                </div>
+    
+                <div class="form-group border-top pt-3">
+                  <div class="terms">
+                    <div>
+                      <input id="terms_accept" type="checkbox">
+                      <label for="terms_accept p-theme-color">I have read and accept <a href="" class="text-primary">
+                        Terms & Conditions</a></label>
+                      </div>
+                    </div>
+              </div>
+              <div class="submit mt-3 ">
+                <button type="submit" class="btn btn-primary btn-lg gradient rounded-pill py-2 px-4">Add Review</button>
+              </div>
+              </form>
+          </div>
+        </div>
+         </div>
+    
+      
+           <div class="tab-pane fade" id="nav-hours" role="tabpanel" aria-labelledby="nav-hours-tab" tabindex="0">
+    
+    
+          <div class=" d-flex justify-content-center">
+            <div class=" ">
+              <div class="widget business-widget  p-4">
+                <div class="widget-content " style="width: 573px;">
+                  <div class="listing-hours">
+    
+                    <div class="listing-today d-flex justify-content-between border-bottom pb-2">
+    
+                      <div class="day">
+                        <h5 class="text-color fw-bold">Today</h5>
+                         <p class="p-theme-color fs-16  ">5 Nov 2019</p>
+                        </div>
+    
+                      <div class="time-items d-flex flex-column align-items-end gap-1">
+                       <p class=" mb-0 badge bg-success-light py-2 px-2">Open Now</p><p class="time mb-0 p-theme-color fs-16">07:00 AM - 09:00 PM</p>
+                      </div>
+    
+                    </div>
+    
+                   <div class="d-flex flex-column gap-3">
+                      <div class="listing-day d-flex justify-content-between align-items-center mt-2" >
+                        <div class="day"><p class=" text-color fs-16 fw-600 mb-0">Monday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                      <div class="listing-day d-flex justify-content-between align-items-center" >
+                        <div class="day "><p class="text-color fs-16 fw-600 mb-0">Tuesday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                       <div class="listing-day d-flex justify-content-between align-items-center" >
+                        <div class="day "><p class="text-color fs-16 fw-600 mb-0">Wednesday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                      <div class="listing-day d-flex justify-content-between align-items-center" >
+                        <div class="day"><p class=" text-color fs-16 fw-600 mb-0">Thursday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                      <div class="listing-day d-flex justify-content-between align-items-center" >
+                        <div class="day"> <p class=" text-color fs-16 fw-600 mb-0">Friday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                      <div class="listing-day d-flex justify-content-between align-items-center" >
+                        <div class="day"><p class=" text-color fs-16 fw-600 mb-0">Saturday</p></div>
+                        <div class="time-items"><p class="time p-theme-color fs-16 mb-0">07:00 AM - 09:00 PM</p></div>
+                      </div>
+      
+                     <div class="closing-day d-flex justify-content-between align-items-center" >
+                        <div class="day "><p class="text-color fs-16 fw-600 mb-0">Sunday</p></div>
+                        <div class="time-items"> <p class=" mb-0 badge bg-danger-light py-2 px-2">Open Now</p></div>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+          </div>
+    
+    
+    
+     
+    
+         </div>
+    </div>
+  </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="main-bg-color mt-5 ">
+        <div class="hanger position-relative overflow-hidden">
+          <div class="profile-setting  mt-5 py-5 ">
+            <div class="container" style="z-index: 2;">
+                <div class="row ">
+                    <div class="col-xl-8 col-sm-12">
+                     
+                      <div class="row">
+                        <div class="col-6 col-sm-3 ">
+                        <div class="Company">
+                            <h5 class="mb-4">Company</h5>
+                            <ul>
+                              <li><a href="">About</a></li>
+                              <li><a href="">Features</a></li>
+                              <li><a href="">Works</a></li>
+                              <li><a href="">Careers</a></li>
+                              <li><a href="">Locations</a></li>
+                          </div>
+                        </div>
+  
+                         <div class="col-6 col-sm-3  ">
+                        <div class="Company ">
+                            <h5 class="mb-4">Treatments</h5>
+                            <ul>
+                              <li><a href="">Dental</a></li>
+                              <li><a href="">Cardiac</a></li>
+                              <li><a href="">Spinal Cord</a></li>
+                              <li><a href="">Hair Growth</a></li>
+                              <li><a href="">Anemia & Disorder</a></li>
+                          </div>
+                        </div>
+  
+                         <div class="col-6 col-sm-3 mt-5 mt-sm-0">
+                        <div class="Company">
+                            <h5 class="mb-4">Specialities</h5>
+                            <ul>
+                              <li><a href="">Transplant</a></li>
+                              <li><a href="">Cardiologist</a></li>
+                              <li><a href="">Oncology</a></li>
+                              <li><a href="">Pediatrics</a></li>
+                              <li><a href="">Gynacology</a></li>
+                          </div>
+                        </div>
+  
+                         <div class="col-6 col-sm-3 mt-5 mt-sm-0">
+                        <div class="Company">
+                            <h5 class="mb-4">Utilites</h5>
+                            <ul>
+                              <li><a href="">Pricing</a></li>
+                              <li><a href="">Contact</a></li>
+                              <li><a href="">Request A Quote</a></li>
+                              <li><a href="">Premium Membership</a></li>
+                              <li><a href="">Integrations</a></li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12 mt-5 mt-sm-0">
+  
+                      <div class="footer-newsletter">
+                    <div class="footer-head mb-3">
+                      <h5 class="fw-bold">Newsletter</h5>
+                    </div>
+                    <div class="profile-setting-newsletter-form my-3 ">
+                      <form>
+                       <div class="d-flex position-relative">
+                          <input class="border-0 rounded-start-4 py-4 px-3 w-100 " type="text" placeholder="Enter Email" style="z-index: 3;">
+                          <button style="z-index: 3;" class=" blue-bg text-white fs-6 fw-bold  border-0 rounded-pill  position-absolute gradient "submit"><i class="fa-solid fa-paper-plane fa-xs"></i> Send</button>
+                       </div>
+                      </form>
+                    </div>
+                    <div class=" profile-setting-newsletter-icons ">
+                      <h5 class="fw-bold mb-3">Connect With Us</h5>
+                      <ul class="d-flex align-items-center gap-2">
+                        <li><a href="">
+                          <i class="fa-brands fa-facebook fa-xl"></i>
+                        </a></li>
+                        <li><a href="">
+                          <i class="fa-brands fa-x-twitter fa-xl"></i>
+                        </a></li>
+                        <li><a href="">
+                          <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a></li>
+                        <li><a href="">
+                         <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </a></li>
+                        <li><a href="">
+                         <i class="fa-brands fa-pinterest fa-xl"></i>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bg">
+              <img src="images/footer-bg-01.png" class="position-absolute top-0 start-0" alt="">
+              <img src="images/footer-bg-02.png" class=" img-2 position-absolute end-0 " alt="">
+              <!-- <img src="images/footer-bg-03.png" class="position-absolute start-0 bottom-0" alt=""> -->
+              <!-- <img src="images/footer-bg-04.png" class=" img-4 position-absolute bottom-0 " alt=""> -->
+              <!-- <img src="images/footer-bg-05.png" class="position-absolute top-0 end-0 " alt=""> -->
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- lightbox -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.js" integrity="sha512-C6X3/hskB+isJVpYkZ68yausQGoZnr7w41ps9fftfXSPhe51ygvgh8NW2b9XCxCpIMUku2BTUOd2JtswTkl29g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.js" integrity="sha512-wvPoH20loGkctRFnd9QMpyFzw/HyHVg8iBEvvXZgtbOk88UPEjvavqp2DEldr/Nwj8w1uCzLZDig+BzhbrXgJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
